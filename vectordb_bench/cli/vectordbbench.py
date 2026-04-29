@@ -31,6 +31,7 @@ from ..backend.clients.polardb.cli import (
     PolarDBHNSWPQ,
     PolarDBHNSWSQ,
 )
+from ..backend.clients.seekdb.cli import SeekDBHNSW
 from ..backend.clients.qdrant_cloud.cli import QdrantCloud
 from ..backend.clients.qdrant_local.cli import QdrantLocal
 from ..backend.clients.redis.cli import Redis
@@ -95,6 +96,7 @@ cli.add_command(Pinot)
 cli.add_command(PolarDBHNSWFlat)
 cli.add_command(PolarDBHNSWPQ)
 cli.add_command(PolarDBHNSWSQ)
+cli.add_command(SeekDBHNSW)
 
 
 if __name__ == "__main__":
